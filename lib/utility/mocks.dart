@@ -1,4 +1,6 @@
 import '../models/mount_model.dart';
+import '../models/category_model.dart';
+import 'package:flutter/material.dart';
 
 final List<MountModel> mountItems = [
   MountModel(
@@ -16,7 +18,8 @@ final List<MountModel> mountItems = [
           'Mount Merbabu is a dormant stratovolcano in Central Java province on the Indonesian island of Java. The name Merbabu could be loosely translated as Mountain of Ash from the Javanese combined words; Meru means mountain and awu or abu means ash.',
       location: 'Central Java'),
   MountModel(
-      path: 'https://cdn.dlmag.com/wp-content/uploads/2019/07/maunaloa1.jpg',
+      path:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Mauna_Kea_from_Mauna_Loa_Observatory%2C_Hawaii_-_20100913_%28cropped%29.jpg/350px-Mauna_Kea_from_Mauna_Loa_Observatory%2C_Hawaii_-_20100913_%28cropped%29.jpg',
       name: 'Mauna Loa',
       description:
           'Mauna Loa is one of five volcanoes that form the Island of Hawaii in the U.S. state of Hawai in the Pacific Ocean. The largest subaerial volcano in both mass and volume, Mauna Loa has historically been considered the largest volcano on Earth, dwarfed only by Tamu Massif.',
@@ -35,4 +38,10 @@ final List<MountModel> mountItems = [
       description:
           'Popocatépetl is an active stratovolcano located in the states of Puebla, Morelos, and Mexico in central Mexico. It lies in the eastern half of the Trans-Mexican volcanic belt. At 5,426 m it is the second highest peak in Mexico, after Citlaltépetl at 5,636 m.',
       location: 'Mexico')
+];
+final List<CategoryModel> categories = [
+  CategoryModel(category: 'Mountain', icon: Icons.terrain),
+  CategoryModel(category: 'Forest', icon: Icons.park),
+  CategoryModel(category: 'Beach', icon: Icons.beach_access),
+  CategoryModel(category: 'Hiking', icon: Icons.directions_walk)
 ];
