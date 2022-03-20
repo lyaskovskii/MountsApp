@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_codelab_1/components/category.dart';
 import 'package:flutter_codelab_1/main.dart';
 import 'package:flutter_codelab_1/utility/constants.dart';
 
 import '../components/custom_drawer.dart';
 import '../components/header.dart';
+import '../components/mount_list_vew.dart';
 import '../components/search.dart';
 
 class MountsApp extends StatelessWidget {
@@ -38,6 +40,10 @@ class MountsApp extends StatelessWidget {
         children: const [
           AppHeader(),
           AppSearch(),
+          Expanded(
+            child: AppMountListView(),
+          ),
+          AppCategory(),
         ],
       ),
     );
