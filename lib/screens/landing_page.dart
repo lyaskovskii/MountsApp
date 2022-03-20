@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_codelab_1/components/bottom_bar.dart';
 import 'package:flutter_codelab_1/components/category.dart';
 import 'package:flutter_codelab_1/main.dart';
 import 'package:flutter_codelab_1/utility/constants.dart';
@@ -17,9 +18,13 @@ class MountsApp extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         actions: const [
+          Icon(
+            Icons.brightness_2,
+            color: Colors.orange,
+          ),
           SizedBox(
-            width: 40.0,
-            height: 40.0,
+            width: 10.0,
+            height: 10.0,
           )
         ],
         elevation: 0,
@@ -44,6 +49,7 @@ class MountsApp extends StatelessWidget {
             child: AppMountListView(),
           ),
           AppCategory(),
+          AppBottomBar(),
         ],
       ),
     );
