@@ -45,3 +45,9 @@ final List<CategoryModel> categories = [
   CategoryModel(category: 'Beach', icon: Icons.beach_access),
   CategoryModel(category: 'Hiking', icon: Icons.directions_walk)
 ];
+
+final sampleRatingData = {
+  'Rating': '4.6',
+  'Price': '\$12',
+  'Open': '24hrs',
+};
