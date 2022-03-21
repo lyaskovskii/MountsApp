@@ -13,7 +13,7 @@ class SplashPage extends StatelessWidget {
         () => {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => MountsApp(),
+                  builder: (context) => const MountsApp(),
                 ),
               )
             });

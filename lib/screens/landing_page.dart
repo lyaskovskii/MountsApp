@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_codelab_1/components/bottom_bar.dart';
 import 'package:flutter_codelab_1/components/category.dart';
-import 'package:flutter_codelab_1/main.dart';
 import 'package:flutter_codelab_1/utility/constants.dart';
 
 import '../components/custom_drawer.dart';

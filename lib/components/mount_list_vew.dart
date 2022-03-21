@@ -7,7 +7,7 @@ class AppMountListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 150,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,

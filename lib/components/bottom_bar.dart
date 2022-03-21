@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_codelab_1/models/bottom_bar_item.dart';
 
+import '../utility/constants.dart';
+
 class AppBottomBar extends StatefulWidget {
   const AppBottomBar({Key? key}) : super(key: key);
 
@@ -34,7 +36,41 @@ class _AppBottomBarState extends State<AppBottomBar> {
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: const [],
+        children: List.generate(barItems.length, (index) {
+          BottomBarItem currentBarItem = barItems[index];
+
+          Widget barItemWidget;
+
+          if (currentBarItem.isSelected) {
+            barItemWidget = Container(
+              padding: const EdgeInsets.only(left: 15, top: 5, right: 15),
+              decoration: BoxDecoration(
+                  color: mainColor, borderRadius: BorderRadius.circular(20)),
+              child: Row(
+                children: [
+                  Icon(currentBarItem.icon, color: Colors.white),
+                  const SizedBox(width: 5),
+                  Text(currentBarItem.label,
+                      style: const TextStyle(color: Colors.white))
+                ],
+              ),
+            );
+          } else {
+            barItemWidget = IconButton(
+              icon: Icon(currentBarItem.icon),
+              color: Colors.grey,
+              onPressed: () {
+                setState(() {
+                  for (var element in barItems) {
+                    element.isSelected = element == currentBarItem;
+                  }
+                });
+              },
+            );
+          }
+
+          return barItemWidget;
+        }),
       ),
     );
   }
