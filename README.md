@@ -2,9 +2,5 @@
 
 Simple Mounts App without any functionality.
 
-## References
-
-https://romanejaquez.github.io/flutter-codelab2
-
-![image](https://user-images.githubusercontent.com/62386883/159238752-0dccc3ba-2603-4194-bd6a-c19f6c2a7f40.png)
+![Screenshot_1647856807](https://user-images.githubusercontent.com/62386883/159239484-93f81e2c-abd7-4fb6-ab46-14186c308b79.png)
 
