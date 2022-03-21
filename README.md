@@ -2,5 +2,4 @@
 
 Simple Mounts App without any functionality.
 
-![Screenshot_1647856807](https://user-images.githubusercontent.com/62386883/159239484-93f81e2c-abd7-4fb6-ab46-14186c308b79.png)
-
+![image](https://user-images.githubusercontent.com/62386883/159239602-b32e1813-5695-42f0-93a0-97d05001f70c.png)
