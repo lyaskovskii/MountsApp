@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_codelab_1/components/details_rating_bar.dart';
 import 'package:flutter_codelab_1/utility/mocks.dart';
 
+import '../components/details_bottom_actions.dart';
+
 class DetailsPage extends StatelessWidget {
   const DetailsPage({Key? key}) : super(key: key);
 
@@ -86,6 +88,34 @@ class DetailsPage extends StatelessWidget {
             child: Column(
               children: [
                 DetailsRatingBar(),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            left: 20, bottom: 20, right: 20),
+                        child: Text(
+                          'About ${selectedItem.name}',
+                          style: const TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            left: 20, bottom: 20, right: 20),
+                        child: Text(
+                          selectedItem.description,
+                          style: const TextStyle(fontSize: 12),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                DetailsBottomActions()
               ],
             ),
           )
