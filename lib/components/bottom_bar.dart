@@ -43,10 +43,11 @@ class _AppBottomBarState extends State<AppBottomBar> {
 
           if (currentBarItem.isSelected) {
             barItemWidget = Container(
-              padding: const EdgeInsets.only(left: 15, top: 5, right: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
               decoration: BoxDecoration(
                   color: mainColor, borderRadius: BorderRadius.circular(20)),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Icon(currentBarItem.icon, color: Colors.white),
                   const SizedBox(width: 5),

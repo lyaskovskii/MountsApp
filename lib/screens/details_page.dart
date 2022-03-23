@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_codelab_1/components/details_rating_bar.dart';
-import 'package:flutter_codelab_1/utility/mocks.dart';
 
 import '../components/details_bottom_actions.dart';
+import '../models/mount_model.dart';
 
 class DetailsPage extends StatelessWidget {
-  const DetailsPage({Key? key}) : super(key: key);
+  const DetailsPage({required this.mount, Key? key}) : super(key: key);
+
+  final MountModel mount;
 
   @override
   Widget build(BuildContext context) {
-    var selectedItem = mountItems[0];
+    var selectedItem = mount;
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -87,7 +89,7 @@ class DetailsPage extends StatelessWidget {
           Expanded(
             child: Column(
               children: [
-                DetailsRatingBar(),
+                const DetailsRatingBar(),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -115,7 +117,7 @@ class DetailsPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                DetailsBottomActions()
+                const DetailsBottomActions()
               ],
             ),
           )
